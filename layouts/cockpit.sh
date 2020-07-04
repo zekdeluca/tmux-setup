@@ -32,5 +32,7 @@ tmux send-keys -t ":terminal.7" 'echo "RIGHT-COLUMN-TOP-BOTTOM-RIGHT"' Enter
 tmux send-keys -t ":terminal.8" 'echo "RIGHT-COLUMN-BOTTOM"' Enter
 tmux send-keys -t ":vim.0" 'vim' Enter
 
+tmux select-pane -t ":terminal.8"
+
 # Attach to session
 tmux -2 attach-session -c $PROJECT_PATH -t $PROJECT_NAME
